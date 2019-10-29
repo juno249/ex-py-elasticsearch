@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  ex-py-elasticsearch:
+    image: ex-py-elasticsearch
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
